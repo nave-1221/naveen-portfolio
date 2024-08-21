@@ -1,0 +1,119 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+   
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: linear-gradient(15deg, rgb(112, 106, 106), rgb(211, 218, 211));
+    align-items: center;
+    justify-content: center;
+}
+.form_btn
+{
+   display: none ;
+}
+
+.form-row-hide
+{
+    display:none;
+}
+.workout-bar
+{
+    display: flex;
+    flex-direction: column;
+     flex-basis: 28rem;
+     background-color: rgb(238, 224, 197);
+     border-radius:10px 0px 0px 10px;
+     justify-content: start;
+     padding: 30px;
+     
+     height: 90vh;
+     gap:1.5rem;
+
+}
+.workout-panel
+{
+    display: flex;
+    height: 80px;
+    width: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    background-color: rgb(234, 238, 243);
+    border-radius: 10px;
+    
+}
+.workout-cycling
+{
+    border-left: 10px solid green;
+}
+.workout-running
+{
+    border-left: 10px solid rgb(206, 12, 12);
+}
+.workout-detail
+{
+    display: flex;
+    
+    flex-direction: row;
+    gap:1rem;
+}
+.workout-h2
+{
+
+    font-size: 15px;
+}
+
+#map
+{
+    flex-basis: 50rem;
+    height: 90vh;
+}
+.form-set
+{
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ background-color: rgb(234, 238, 243);
+justify-content: space-evenly;
+height: 90px;
+width: 350px;
+padding: 10px;
+border-radius: 10px;
+transition: all 0.5s, transform 1ms ;
+}
+.form-row
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.form-row .form-label
+{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.form-row .input-box
+{
+    max-width:8vw;
+    min-width: 100px;
+    height: 3.5vh;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+
+}
+.hidden
+{
+    transform: translateY(-10px);
+    transition-duration: 3s;
+    display: none;
+    opacity:0;
+
+}

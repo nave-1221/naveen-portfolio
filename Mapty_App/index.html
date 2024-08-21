@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="other.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>  
+    <div class="workout-bar">
+        <ul>
+        <form action="#"class="form-set hidden" autocomplete="off">
+                <div class="form-row">
+                    <label for="type" class="form-label">
+                      Workout
+                    </label>
+                    <select name="workout-type" id="type"class="input-box input-type">
+                        <option value="cycling"class="workout-option">cycling</option>
+                        <option value="running"class="workout-option">running</option>
+                    </select>
+               
+                    <label for="distance" class="form-label">
+                      Distance 
+                    </label>
+                    <input type="text" class="input-box input-dis"id="distance"placeholder="Km">
+                </div>
+                <div class="form-row">
+                    <label for="duration" class="form-label">
+                      Duration
+                    </label>
+                    <input type="number" class="input-box input-dura"id="distance"placeholder="Mins">
+               <div class="form-1 form-row-hide">
+                    <label for="duration" class="form-label">
+                     Elev Gain
+                    </label> 
+                    <input type="text" class="input-box input-elev"id="distance"placeholder="Mins">
+                    </div>
+                    <div class="form-2 ">
+                        <label for="duration" class="form-label">
+                          <b>   Cadence</b> 
+                        </label>
+                        <input type="text" class="input-box input-cand"id="distance"placeholder="Mins">
+                </div>
+                 </div>   
+                 
+                <button class="form_btn">ok</button>
+            
+            </form>
+
+        </ul>
+      
+  
+
+      </div>
+      
+  </div>
+    <div id="map">
+
+    </div>
+</body>
+</html>
